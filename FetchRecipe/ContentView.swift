@@ -13,7 +13,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Picker("Select a paint color", selection: $selection) {
+                Picker("Select a search option", selection: $selection) {
                     ForEach(options, id: \.self) {
                         Text($0)
                     }
